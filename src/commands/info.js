@@ -17,7 +17,7 @@ export default class AppInfo extends Command {
     let app = this.flags.app
     let space = this.flags.space
     let addon = this.flags.addon
-    if (!(addon || app || space)) throw new Error('missing resource')
+    if (!(addon || app || space)) throw new Error('Missing flag --app, --addon, or --space')
 
     let output = this._formatOutput(addon, app, space)
     this.out.log(output)
