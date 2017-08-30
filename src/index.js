@@ -5,7 +5,7 @@ import path from 'path'
 
 export const topic = {
   name: 'hello',
-  description: 'says hello (example plugin)'
+  description: 'example topic'
 }
 
 let dir = path.join(__dirname, 'commands')
